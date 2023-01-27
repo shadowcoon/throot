@@ -1,0 +1,9 @@
+services:
+  thweb:
+    image: shadowcoon/thweb
+    restart: always
+    ports: 80:8000
+    volumes:
+      - type: bind
+        source: /etc/letsencrypt/live/taghunt.org
+        target: /etc/certs
