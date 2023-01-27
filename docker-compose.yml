@@ -6,5 +6,5 @@ services:
       - 80:8000
     volumes:
       - type: bind
-        source: /etc/letsencrypt/live/taghunt.org
+        source: /usr/local/etc/certs
         target: /etc/certs
