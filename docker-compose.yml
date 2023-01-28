@@ -2,12 +2,9 @@ services:
   thweb:
     image: shadowcoon/thweb
     restart: always
-    ports: 
+    ports:
       - 443:8000
     volumes:
       - type: bind
         source: /usr/local/etc/certs
         target: /etc/certs
-      - type: bind
-        source: /var/www
-        target: /var/www
